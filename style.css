@@ -1,44 +1,47 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 2fr;
-    margin: 0 100px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr; 
     gap: 20px;
-    background-image: url('/1600w-DwzHWC9oTFs.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-.rubrik{
-    grid-column: 1/ 3;
+.Rubrik {
     grid-row: 1 / 2;
-}
-
-.rubrik2{
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
-    border: 5px solid black;
-    border-radius: 10px;
+    grid-column: 1/2;
+    padding: 20px;
     text-align: center;
-    background-color: beige;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Köttfärsås{
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    max-width: 15px;
-    border-radius: 10px;
-    max-height: 15px;
+.Bild {
+    grid-row: 1/2; 
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
-.Köttfärsåsbild{
-    max-width: auto;
-    max-height: auto;
+.Bild img {
+    max-width: 100%;
+    height: auto;
+    max-height: 550px;
 }
 
-.Instruktioner{
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-    padding: 10;
+.Ingredienser {
+    grid-row: 2; 
+    grid-column: 1; 
+    padding: 20px;
+    font-size: x-large;
+}
+
+.Instruktioner {
+    grid-row: 2; 
+    grid-column: 2; 
+    padding: 20px;
 }
